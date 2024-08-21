@@ -1,5 +1,7 @@
 package base
 
+const Version = "0.1.0"
+
 type Result struct {
 	Host         string            `json:"host"`
 	Port         string            `json:"port"`
