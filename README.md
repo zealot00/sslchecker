@@ -1,0 +1,2 @@
+# sslchecker
+When it is tormented by various compliance, it leaves a small tool for testing the TLS status of the corresponding address, the algorithm, the configuration of various header information, etc
