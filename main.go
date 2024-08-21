@@ -133,7 +133,14 @@ func main() {
 		Timeout: 5 * time.Second,
 	}
 
-	resp, err := client.Get(url)
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		fmt.Printf("Error creating request: %v\n", err)
+		return
+	}
+	req.Header.Add("User-Agent", args.UA)
+
+	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Printf("Error fetching %s: %v\n", url, err)
 		return

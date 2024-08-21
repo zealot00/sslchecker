@@ -14,6 +14,8 @@ go build main.go
         output type,you can use stdout or json,default stdout (default "stdout")  
   -port string  
         port to connect to (default "443")   
+  -useragent string  
+        user-agent  
 ```
 
 # Options  
@@ -21,6 +23,7 @@ go build main.go
 - port string
 - outputpath string if you chose json, you should set outputpath.default ./
 - outputtype striing output type,you can use stdout or json,default stdout. //TODO
+- user-agent string ,default Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 ,you set user-agent for you need to specify 
 
 # example
 ```
