@@ -2,8 +2,6 @@ package base
 
 import (
 	"flag"
-	"fmt"
-	"os"
 )
 
 type CliArgs struct {
@@ -22,6 +20,7 @@ func InitFlags() CliArgs {
 	outputpath := flag.String("outputpath", "./", "if you chose json,you should set outputpath.default ./")
 
 	flag.Parse()
+	/**
 	if len(flag.Args()) == 0 {
 		fmt.Println("waring: not enough arguments,Unless you confirm to scan the local loopback address")
 		flag.Usage = func() {
@@ -30,6 +29,7 @@ func InitFlags() CliArgs {
 		}
 		//os.Exit(2)
 	}
+	**/
 	CliArgs := CliArgs{
 		Host:       *host,
 		Port:       *port,
